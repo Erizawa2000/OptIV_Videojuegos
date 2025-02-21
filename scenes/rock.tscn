@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ta0webu32dxh"]
+
+[ext_resource type="Texture2D" uid="uid://co8ohsydary8s" path="res://assets/img/obstacles/mesa.png" id="1_si4xk"]
+
+[node name="Rock" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -30)
+scale = Vector2(3, 3)
+texture = ExtResource("1_si4xk")
+centered = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(3, 3)
+polygon = PackedVector2Array(-6, -14.3333, 29, 14.3333, -28.5, 15, -22.3333, -13.3333)
