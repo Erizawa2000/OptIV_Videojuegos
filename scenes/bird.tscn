@@ -15,7 +15,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fqt42"]
-size = Vector2(43, 51)
+size = Vector2(58, 95)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s8m3f"]
 radius = 32.0
@@ -32,9 +32,9 @@ animation = &"flying"
 autoplay = "flying"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-38.5, 2.5)
+position = Vector2(3, -3.5)
 shape = SubResource("RectangleShape2D_fqt42")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(15, 0)
+position = Vector2(-8, -3)
 shape = SubResource("CapsuleShape2D_s8m3f")

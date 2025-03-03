@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1i2grd7arx3q"
-path="res://.godot/imported/orca_running.png-ed8daa848d3ef1eed158667b70fe6123.ctex"
+uid="uid://kd00wva421kq"
+path="res://.godot/imported/orca_waiting.png-4cd3244dab4baa38d197f0ab35c430a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/orca_running.png"
-dest_files=["res://.godot/imported/orca_running.png-ed8daa848d3ef1eed158667b70fe6123.ctex"]
+source_file="res://assets/img/orca/orca_waiting.png"
+dest_files=["res://.godot/imported/orca_waiting.png-4cd3244dab4baa38d197f0ab35c430a3.ctex"]
 
 [params]
 

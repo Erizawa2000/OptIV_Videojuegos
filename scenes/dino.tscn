@@ -1,29 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://bhtein0chknfn"]
+[gd_scene load_steps=14 format=3 uid="uid://bhtein0chknfn"]
 
 [ext_resource type="Script" path="res://scenes/dino.gd" id="1_1stpw"]
 [ext_resource type="AudioStream" uid="uid://dscpg6m666dta" path="res://assets/sound/jump.wav" id="2_60go1"]
-[ext_resource type="Texture2D" uid="uid://dd7n63au6mo12" path="res://assets/img/orca_waiting.png" id="5_34sni"]
-[ext_resource type="Texture2D" uid="uid://cumdlsseud4k6" path="res://assets/img/orca_jumping.png" id="6_ojk1b"]
-[ext_resource type="Texture2D" uid="uid://b8l7ymnhg3sua" path="res://assets/img/orca_walking.png" id="7_2m8kk"]
-[ext_resource type="Texture2D" uid="uid://d1i2grd7arx3q" path="res://assets/img/orca_running.png" id="8_ksrwi"]
+[ext_resource type="Texture2D" uid="uid://bckaaqga0cn1f" path="res://assets/img/orca/orca en mesas-03.png" id="2_e74d0"]
+[ext_resource type="Texture2D" uid="uid://lb2rpbmphgk1" path="res://assets/img/orca/orca_down.png" id="2_jc4hk"]
+[ext_resource type="Texture2D" uid="uid://cigeq54n4auk3" path="res://assets/img/orca/orca en mesas-04.png" id="3_7pn3v"]
+[ext_resource type="Texture2D" uid="uid://crspvmy3wnxxr" path="res://assets/img/orca/orca en mesas-02.png" id="4_lqiwv"]
+[ext_resource type="Texture2D" uid="uid://cukynfwqmsj2j" path="res://assets/img/orca/orca en mesas_Mesa de trabajo 1.png" id="5_jpbpp"]
+[ext_resource type="Texture2D" uid="uid://dhl18c2yfi1pq" path="res://assets/img/orca/orca_walking.png" id="7_5bud0"]
+[ext_resource type="Texture2D" uid="uid://crcuqg7swnb84" path="res://assets/img/orca/orca_jumping.png" id="8_cjsd6"]
+[ext_resource type="Texture2D" uid="uid://b5ayht6hkhiod" path="res://assets/img/orca/orca_running.png" id="9_x2kdu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6wmvf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_34sni")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_2m8kk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_ksrwi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_ojk1b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_ksrwi")
+"texture": ExtResource("2_jc4hk")
 }],
 "loop": true,
 "name": &"duck",
@@ -31,7 +23,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_34sni")
+"texture": ExtResource("2_e74d0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5bud0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_cjsd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x2kdu")
 }],
 "loop": true,
 "name": &"idle",
@@ -39,7 +40,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_ojk1b")
+"texture": ExtResource("5_jpbpp")
 }],
 "loop": true,
 "name": &"jump",
@@ -47,10 +48,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_2m8kk")
+"texture": ExtResource("3_7pn3v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_ksrwi")
+"texture": ExtResource("4_lqiwv")
 }],
 "loop": true,
 "name": &"run",
@@ -58,7 +59,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_whux2"]
-size = Vector2(10, 16)
+size = Vector2(10, 14.375)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t1b5m"]
 size = Vector2(10, 14)
@@ -70,12 +71,14 @@ script = ExtResource("1_1stpw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_6wmvf")
 animation = &"duck"
 autoplay = "idle"
+frame_progress = 0.983702
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
+position = Vector2(-1, 0.8125)
 shape = SubResource("RectangleShape2D_whux2")
 
 [node name="DuckCol" type="CollisionShape2D" parent="."]

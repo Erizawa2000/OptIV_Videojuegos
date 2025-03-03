@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd7n63au6mo12"
-path="res://.godot/imported/orca_waiting.png-6cceb9fca4759ac1b9a81ef6786fca9b.ctex"
+uid="uid://cukynfwqmsj2j"
+path="res://.godot/imported/orca en mesas_Mesa de trabajo 1.png-0dd0319b528bf8932f60a967db1e77a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/orca_waiting.png"
-dest_files=["res://.godot/imported/orca_waiting.png-6cceb9fca4759ac1b9a81ef6786fca9b.ctex"]
+source_file="res://assets/img/orca/orca en mesas_Mesa de trabajo 1.png"
+dest_files=["res://.godot/imported/orca en mesas_Mesa de trabajo 1.png-0dd0319b528bf8932f60a967db1e77a1.ctex"]
 
 [params]
 

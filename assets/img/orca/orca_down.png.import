@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cumdlsseud4k6"
-path="res://.godot/imported/orca_jumping.png-ec79c5a42264eb6b0136db2ffa91888b.ctex"
+uid="uid://lb2rpbmphgk1"
+path="res://.godot/imported/orca_down.png-0ab9705f9d3abc6e1cbe5f3b340d42fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/orca_jumping.png"
-dest_files=["res://.godot/imported/orca_jumping.png-ec79c5a42264eb6b0136db2ffa91888b.ctex"]
+source_file="res://assets/img/orca/orca_down.png"
+dest_files=["res://.godot/imported/orca_down.png-0ab9705f9d3abc6e1cbe5f3b340d42fb.ctex"]
 
 [params]
 
